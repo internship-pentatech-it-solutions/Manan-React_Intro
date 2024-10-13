@@ -3,9 +3,9 @@ import { Navbar } from "../components/Navbar";
 
 export const Contact = () => {
   return (
-    <div>
+    <div className="h-screen">
       <Navbar />
-      <h1 className="text-9xl flex items-center justify-center h-full">
+      <h1 className="text-9xl flex items-center justify-center h-[80%]">
         Contact
       </h1>
     </div>
