@@ -11,12 +11,14 @@ import {
 import { Shop } from "./routes/Shop.jsx";
 import { About } from "./routes/About.jsx";
 import { Contact } from "./routes/Contact.jsx";
+import { Service } from "./routes/Service.jsx";
 
 const router = createBrowserRouter([
   { path: "/", element: <App /> },
   { path: "/shop", element: <Shop /> },
+  { path: "/service", element: <Service /> },
   { path: "/about", element: <About /> },
-  { path: "/Contact", element: <Contact /> },
+  { path: "/contact", element: <Contact /> },
 ]);
 
 createRoot(document.getElementById("root")).render(
