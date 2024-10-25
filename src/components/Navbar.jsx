@@ -34,7 +34,7 @@ export const Navbar = () => {
               placeholder="Search"
               className="w-full bg-transparent outline-none"
             />
-            <Search color="#09090b" />
+            <Search color="#09090b" className="cursor-pointer" />
           </span>
           <PhoneCall
             color="#fafafa"
@@ -47,7 +47,7 @@ export const Navbar = () => {
             placeholder="Search"
             className="w-full bg-transparent outline-none"
           />
-          <Search color="#09090b" />
+          <Search color="#09090b" className="cursor-pointer" />
         </span>
         <nav className="hidden lg:flex gap-20 text-[#e2e2e2]  justify-center items-center">
           <Link
@@ -63,7 +63,7 @@ export const Navbar = () => {
             Shop
           </Link>
           <Link
-            to={"/shop"}
+            to={"/service"}
             className="hover:text-[#fafafa] transition duration-300 opacity-65 hover:opacity-80 "
           >
             Service
@@ -83,14 +83,14 @@ export const Navbar = () => {
         </nav>
       </div>
       {openMenu && (
-        <nav className="absolute top-24 py-4 px-12 flex flex-col gap-2 w-full bg-[#09090b] text-[#e2e2e2] justify-center items-center pb-6">
+        <nav className="absolute top-24 py-4 px-12 flex flex-col gap-6 w-full bg-[#09090b] text-[#e2e2e2] justify-center items-center pb-6">
           <Link to={"/"} className="hover:text-[#fafafa] opacity-80 ">
             Home
           </Link>
           <Link to={"/shop"} className="hover:text-[#fafafa] opacity-80 ">
             Shop
           </Link>
-          <Link to={"/shop"} className="hover:text-[#fafafa]  opacity-80 ">
+          <Link to={"/service"} className="hover:text-[#fafafa]  opacity-80 ">
             Service
           </Link>
           <Link to={"/about"} className="hover:text-[#fafafa]  opacity-80 ">

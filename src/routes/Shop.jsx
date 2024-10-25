@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Navbar } from "../components/Navbar";
+import { Footer } from "../components/Footer";
 
 export const Shop = () => {
   const nextFox = () => {
@@ -28,6 +29,7 @@ export const Shop = () => {
           Next Fox
         </button>
       </div>
+      <Footer />
     </div>
   );
 };
