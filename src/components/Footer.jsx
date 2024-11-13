@@ -7,10 +7,7 @@ export const Footer = () => {
     <div className="bg-[#09090b] flex flex-col justify-center items-center lg:p-10 p-6 md:p-10 gap-10">
       <div className="flex flex-col lg:flex-row md:flex-row justify-between lg:gap-32 md:gap-30 gap-4 md:gap-16 text-[#fafafa] w-full">
         <span className="lg:w-3/4 md:w-2/3 w-full flex flex-col gap-2">
-          <img
-            src="../../public/images/mhlogo.png"
-            className="object-contain w-24 h-20"
-          />
+          <img src="/images/mhlogo.png" className="object-contain w-24 h-20" />
           <div className="opacity-80">
             Mattress Home is dedicated to providing quality and affordable
             mattresses for your best rest. Our mission is to ensure that

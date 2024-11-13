@@ -24,7 +24,7 @@ export const Navbar = () => {
 
           <Link to={"/"}>
             <img
-              src="../../public/images/mhlogo.png"
+              src="/images/mhlogo.png"
               className="object-contain w-24 h-16"
             />
           </Link>
@@ -83,7 +83,7 @@ export const Navbar = () => {
         </nav>
       </div>
       {openMenu && (
-        <nav className="absolute top-24 py-4 px-12 flex flex-col gap-6 w-full bg-[#09090b] text-[#e2e2e2] justify-center items-center pb-6">
+        <nav className="absolute lg:hidden top-24 py-4 px-12 flex flex-col gap-6 w-full bg-[#09090b] text-[#e2e2e2] justify-center items-center pb-6">
           <Link to={"/"} className="hover:text-[#fafafa] opacity-80 ">
             Home
           </Link>

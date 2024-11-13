@@ -2,7 +2,7 @@ import React from "react";
 import { Brandcard } from "./Brandcard";
 import data from "../data/data";
 
-console.log(data);
+// console.log(data);
 
 export const Brands = () => {
   return (
