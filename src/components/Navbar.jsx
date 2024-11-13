@@ -6,7 +6,7 @@ export const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
   return (
     <>
-      <div className="lg:px-16 py-6 md:px-10 px-6 bg-[#09090b] relative">
+      <div className="lg:px-16 py-6 md:px-10 px-6 bg-[#09090b] sticky top-0 w-full">
         <div className="flex justify-between items-center mb-4">
           {openMenu ? (
             <X

@@ -10,7 +10,7 @@ export const Brandcard = ({ brand }) => {
         style={{
           backgroundImage: `url(${brand.imageUrl})`,
         }}
-        className="bg-cover lg:w-1/2 w-full h-full bg-center"
+        className="bg-cover lg:w-1/2 w-full h-full bg-center "
       >
         {/* <img
           src="../../public/images/brand_images/ashfoam.jpg"

@@ -57,7 +57,7 @@ export const FeaturedProducts = () => {
   }
 
   return (
-    <div className="bg-white w-full rounded-2xl shadow-md p-8 lg:p-12 flex flex-col">
+    <div className="bg-[#fafafa] w-full rounded-2xl shadow-md p-8 lg:p-12 flex flex-col">
       <div className="flex flex-col items-center justify-center gap-4 mb-12">
         <h1 className="font-semibold text-3xl text-center">
           Our Featured Products
