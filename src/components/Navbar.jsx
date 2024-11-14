@@ -6,7 +6,7 @@ export const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
   return (
     <>
-      <div className="lg:px-16 py-6 md:px-10 px-6 bg-[#09090b] sticky top-0 w-full">
+      <div className="lg:px-16 py-6 md:px-10 px-6 bg-[#09090b] sticky top-0 w-full z-50">
         <div className="flex justify-between items-center mb-4">
           {openMenu ? (
             <X
@@ -83,7 +83,7 @@ export const Navbar = () => {
         </nav>
       </div>
       {openMenu && (
-        <nav className="fixed lg:hidden top-24 py-4 px-12 flex flex-col gap-6 w-full bg-[#09090b] text-[#e2e2e2] justify-center items-center pb-6">
+        <nav className="fixed lg:hidden z-50 top-24 py-4 px-12 flex flex-col gap-6 w-full bg-[#09090b] text-[#e2e2e2] justify-center items-center pb-6">
           <Link to={"/"} className="hover:text-[#fafafa] opacity-80 ">
             Home
           </Link>

@@ -17,18 +17,18 @@ export const Contact = () => {
           <h1 className="md:text-3xl lg:text-3xl text-2xl font-semibold mb-32 md:mb-24">
             Talk to Us
           </h1>
-          <div className="flex flex-col bg-[#fafafa] p-6 rounded-3xl text-[#09090b] lg:gap-6 md:gap-4 gap-2">
+          <div className="flex flex-col bg-[#fafafa] p-4 md:p-6 rounded-3xl text-[#09090b] lg:gap-6 md:gap-4 gap-2">
             <div className="flex gap-8 items-center">
               <Phone color="#4f46e5" />
-              <p className="text-lg">+233 (0) 24 428 1122</p>
+              <p className="md:text-lg">+233 (0) 24 428 1122</p>
             </div>
             <div className="flex gap-8 items-center">
               <Mail color="#4f46e5" />
-              <p className="text-lg">wconsult@yahoo.com</p>
+              <p className="md:text-lg">wconsult@yahoo.com</p>
             </div>
             <div className="flex gap-8 items-center">
               <Phone color="#4f46e5" />
-              <p className="text-lg">Kumasi, Ghana</p>
+              <p className="md:text-lg">Kumasi, Ghana</p>
             </div>
           </div>
         </div>
@@ -37,7 +37,7 @@ export const Contact = () => {
             Send Us a Message
           </p>
           <form className="flex flex-col gap-8">
-            <div className="flex flex-col gap-4 text-lg">
+            <div className="flex flex-col gap-4 md:text-lg">
               <input
                 className="py-4 px-4 rounded-3xl border focus:outline-none focus:border-2 focus:border-[#09090b]  border-[#f2f2f2]"
                 type="text"
@@ -60,7 +60,7 @@ export const Contact = () => {
                 placeholder="Your Phone Number"
               />
             </div>
-            <div className="text-[#09090b] flex flex-col gap-4 text-lg">
+            <div className="text-[#09090b] flex flex-col gap-4 md:text-lg">
               <p>How do you preferred we reached out?</p>
               <span className="flex gap-8 items-center">
                 <span className="flex gap-2 items-center">
@@ -89,12 +89,12 @@ export const Contact = () => {
               name="message"
               id="message"
               placeholder="Enter your message here"
-              className="outline-none h-[10rem] p-4 text-lg rounded-xl resize-none border border-[#f2f2f2] focus:border-2 focus:border-[#09090b]"
+              className="outline-none h-[10rem] p-4 md:text-lg rounded-xl resize-none border border-[#f2f2f2] focus:border-2 focus:border-[#09090b]"
             ></textarea>
             <input
               type="button"
               value="Submit"
-              className="py-3 px-4 rounded-3xl cursor-pointer bg-[#09090b] text-white text-xl hover:bg-opacity-90 transition duration-500"
+              className="py-3 px-4 rounded-3xl cursor-pointer bg-[#09090b] text-white md:text-xl hover:bg-opacity-90 transition duration-500"
             />
           </form>
         </div>
