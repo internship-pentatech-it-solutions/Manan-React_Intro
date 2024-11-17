@@ -19,7 +19,7 @@ export const Brandcard = ({ brand }) => {
       </div>
       <div className="flex flex-col justify-between lg:p-8 p-6 gap-16 md:gap-8 sm:gap-4 w-full lg:w-1/2 border-[#000000]">
         <div className="flex flex-col">
-          <h1 className="font-bold">{brand.name}</h1>
+          <h1 className="font-bold text-[#333333]">{brand.name}</h1>
           <p>{brand.description}</p>
         </div>
         <Link

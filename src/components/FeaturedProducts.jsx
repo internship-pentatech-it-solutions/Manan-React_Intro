@@ -9,7 +9,7 @@ const Product = ({ product }) => {
     import.meta.env.VITE_APP_API_URL + "/" + product.pictures[0].image_path;
 
   return (
-    <div className="w-full flex flex-col justify-between lg:min-w-[100%] h-full border-1 border-[#e2e2e2] shadow-md rounded-lg overflow-hidden">
+    <div className="w-full flex flex-col justify-between lg:min-w-[100%] h-full border-1 border-[#e2e2e2] shadow-sm rounded-lg overflow-hidden">
       <div className="h-[60%] w-full">
         <img src={imageUrl} className="object-cover h-[15rem] w-full" />
       </div>
@@ -20,7 +20,9 @@ const Product = ({ product }) => {
         </div>
         <hr />
         <div className="flex justify-between items-center lg:px-4 md:px-2 px-1">
-          <p className="text-md">GH₵ {product.prices[0].price}</p>
+          <p className="text-md text-[#0056B3]">
+            GH₵ {product.prices[0].price}
+          </p>
           <button className="border border-[#e2e2e2] p-1 px-4 rounded-lg hover:bg-[#e2e2e2] transition duration-300">
             Buy Me
           </button>
