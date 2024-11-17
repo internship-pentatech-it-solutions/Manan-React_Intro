@@ -19,15 +19,15 @@ export const Contact = () => {
           </h1>
           <div className="flex flex-col bg-[#fafafa] p-4 md:p-6 rounded-3xl text-[#333333] lg:gap-6 md:gap-4 gap-2">
             <div className="flex gap-8 items-center">
-              <Phone color="#4f46e5" />
+              <Phone color="#4f46e5" size={20} />
               <p className="md:text-lg">+233 (0) 24 428 1122</p>
             </div>
             <div className="flex gap-8 items-center">
-              <Mail color="#4f46e5" />
+              <Mail color="#4f46e5" size={20} />
               <p className="md:text-lg">wconsult@yahoo.com</p>
             </div>
             <div className="flex gap-8 items-center">
-              <Phone color="#4f46e5" />
+              <Phone color="#4f46e5" size={20} />
               <p className="md:text-lg">Kumasi, Ghana</p>
             </div>
           </div>

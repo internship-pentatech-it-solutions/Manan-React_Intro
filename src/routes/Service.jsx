@@ -8,15 +8,15 @@ export const Service = () => {
   return (
     <div className="h-screen">
       <Navbar />
-      <div className="flex gap-16 p-16 justify-center">
-        <div className="flex flex-col gap-8 w-2/5">
+      <div className="flex gap-16 p-8 md:p-16 justify-center items-center">
+        <div className="flex flex-col gap-4 md:gap-8 w-full lg:w-2/5">
           <span className="flex flex-col gap-2">
-            <h1 className="text-2xl text-[#0056B3]">Sleep Better</h1>
-            <h1 className="text-3xl font-semibold">
+            <h1 className="text-xl md:text-2xl text-[#0056B3]">Sleep Better</h1>
+            <h1 className="text-2xl md:text-3xl font-semibold">
               Our Services | Mattress Home
             </h1>
           </span>
-          <p className="mb-2 leading-8 text-lg">
+          <p className="mb-2 leading-8 md:text-lg">
             At Mattress Home, we are dedicated to providing top-notch services
             that cater to your sleep needs. Whether you need a new mattress or
             wish to restore your old one, we have the perfect solution for you.
@@ -63,7 +63,7 @@ export const Service = () => {
         <img
           src="/images/mattressStaff.png"
           alt="Staff Image"
-          className="object-contain w-1/2 rounded-2xl"
+          className="object-contain w-[51%] h-full rounded-2xl hidden lg:flex"
         />
       </div>
       <Footer />
