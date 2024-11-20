@@ -1,33 +1,59 @@
-import React from "react";
-import { Carousel } from "flowbite-react";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 export const CarouselComponent = () => {
   const images = [
     {
-      src: "../../public/images/carousel_images/slide1.jpg",
+      src: "/images/carousel_images/slide1.jpg",
       alt: "carousel image",
     },
     {
-      src: "../../public/images/carousel_images/slide2.jpg",
+      src: "/images/carousel_images/slide2.jpg",
       alt: "carousel image",
     },
     {
-      src: "../../public/images/carousel_images/slide3.jpg",
+      src: "/images/carousel_images/slide3.jpg",
       alt: "carousel image",
     },
     {
-      src: "../../public/images/carousel_images/slide4.jpg",
+      src: "/images/carousel_images/slide4.jpg",
       alt: "carousel image",
     },
   ];
 
   return (
-    <div className="h-56 sm:h-64 xl:h-80 2xl:h-96 !rounded-2xl p-4 w-full overflow-hidden">
-      <Carousel className="h-full">
-        {images.map((image, index) => (
-          <img key={index} src={image.src} alt={image.alt} />
+    <Carousel
+      plugins={[
+        Autoplay({
+          delay: 3000,
+        }),
+      ]}
+      opts={{
+        align: "start",
+      }}
+      className="w-full rounded-2xl mb-8 md:mb-12 h-full"
+    >
+      <CarouselContent>
+        {images.map((_, index) => (
+          <CarouselItem key={index}>
+            <div className="p-1">
+              <img
+                src={_.src}
+                alt="Carousel Image"
+                className="object-fill md:object-cover rounded-2xl w-full h-24 md:h-full"
+              />
+            </div>
+          </CarouselItem>
         ))}
-      </Carousel>
-    </div>
+      </CarouselContent>
+      <CarouselPrevious />
+      <CarouselNext />
+    </Carousel>
   );
 };
